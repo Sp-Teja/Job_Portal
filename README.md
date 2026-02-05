@@ -50,6 +50,10 @@ It enables companies to post jobs, and users to apply for them using JWT Authent
 |--------|----------|-------------|
 | POST | `/jobs/apply/<id>/` | Apply for a job |
 
----
 
-## 🗂 Folder Structure
+## 🧪 How to Run
+```bash
+pip install -r requirements.txt
+python manage.py migrate
+python manage.py runserver
+
