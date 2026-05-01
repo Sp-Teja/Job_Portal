@@ -1,3 +1,4 @@
+
 "# JobPortal_BackEnd" 
 # 🧑‍💻 Job Portal Backend (Django + DRF)
 
@@ -57,3 +58,6 @@ pip install -r requirements.txt
 python manage.py migrate
 python manage.py runserver
 
+=======
+# Job_Portal
+>>>>>>> 44f9079cc41a814022298e761b635854c448dee5

@@ -1,0 +1,42 @@
+
+---
+
+# 🟦 **4. FULL PROJECT DOCUMENTATION.md**
+
+Create a `DOCUMENTATION.md` file with this content:
+
+````markdown
+# 📘 Full Backend Documentation – Job Portal API
+
+---
+
+## 1. Overview
+Job Portal API is a backend system using Django REST Framework that allows:
+- Users to register/login
+- Companies to post jobs
+- Users to apply for jobs
+- Tokens for secure access
+- Filtering & Pagination
+
+---
+
+## 2. Technology Stack
+- Django
+- DRF
+- MySQL
+- JWT Authentication
+
+---
+
+## 3. Models
+
+### Job Model
+```python
+class Job(models.Model):
+    company = models.CharField(max_length=200)
+    title = models.CharField(max_length=200)
+    description = models.TextField()
+    location = models.CharField(max_length=200)
+    salary = models.CharField(max_length=100)
+    created_by = models.ForeignKey(User, on_delete=models.CASCADE)
+    created_at = models.DateTimeField(auto_now_add=True)
